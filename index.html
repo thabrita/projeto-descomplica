@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos sonhos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Pacotes</li>
+                <li>Taxas</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
+    </header>
+
+    <section>
+        <h2>Conheça nossos pacotes</h2>
+        <p>Mussum Ipsum, cacilds vidis litro abertis.
+            Detraxit consequat et quo num tendi nada.
+            Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+            Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
+            Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
+            <br><br>
+            <a href="https://mussumipsum.com/">Link</a>
+            <hr>
+        </p>
+        <figure>
+            <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
+            <figcaption>Gramado</figcaption>
+        </figure>
+        <figure>
+            <img src="img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
+            <figcaption>Porto Seguro</figcaption>
+        </figure>
+        <figure>
+            <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
+            <figcaption>Rio de Janeiro</figcaption>
+        </figure>
+
+    </section>
+    <video controls width="500px" ;>
+        <source src="video/rabbit320.mp4" type="video/mp4">
+        <source src="video/video_rabbit320.webm" type="video/webm">
+        Seu navegador não suporta o formato do vídeo. <a href="video/rabbit320.mp4">Clique aqui para baixar</a>
+    </video>
+    <br><br>
+
+    <section>
+        <h2>Taxas e Serviços</h2>
+        <p>Veja nossas taxas para serviços:</p>
+        <table border>
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva de hotel</td>
+                    <td>R$150,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de passagens</td>
+                    <td>R$100,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de Carros</td>
+                    <td>R$50,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Orçamento</h2>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Dados da viagem</legend>
+                <label>Nome:</label>
+                <input type="text" name="nome"><br><br>
+
+                <label>Email:</label>
+                <input type="email" required name="email"><br><br>
+
+                <label>Data de ida:</label>
+                <input type="date" name="dataIda"><br><br>
+
+                <label>Data de Volta:</label>
+                <input type="date" name="dataVolta"><br><br>
+
+                <label>Quantidade de pessoas:</label>
+                <input type="number" name="qtasPessoas"><br><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+                <label>
+                    <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="veiculos" value="Veículo">Reserva de veículos
+                </label>
+            </fieldset><br>
+            <fieldset>
+                <legend>Escolha a forma de pagamento:</legend>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Pix">Pix
+                    </label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento:</legend>
+                <select name="prazoPagamento">
+                    <option value="Á vista">Á vista</option>
+                    <option value="5x sem juros">5x sem juros</option>
+                    <option value="10x com juros" selected>10x com juros</option>
+                </select>
+            </fieldset>
+
+            <label>Comentário:</label><br>
+            <textarea rows="5" name="comentario"></textarea><br><br>
+
+            <button>Salvar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Thaís Brito</p>
+    </footer>
+</body>
+
+</html>
