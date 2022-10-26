@@ -2,14 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    <style>
-        p {color:green;}
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagem dos sonhos</title>
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,25 +14,16 @@
     <header>
         <nav>
             <ul>
-                <li>Pacotes</li>
-                <li>Taxas</li>
-                <li>Contato</li>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Taxas</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <h1 style="color:red;">Venha realizar a viagem dos seus sonhos!</h1>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
     </header>
 
-    <section>
+    <section id="pacotes">
         <h2>Conheça nossos pacotes</h2>
-        <p style="color:blue;">Mussum Ipsum, cacilds vidis litro abertis.
-            Detraxit consequat et quo num tendi nada.
-            Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
-            Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
-            Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
-            <br><br>
-            <a href="https://mussumipsum.com/">Link</a>
-            <hr>
-        </p>
         <p>Mussum Ipsum, cacilds vidis litro abertis.
             Detraxit consequat et quo num tendi nada.
             Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
@@ -45,40 +33,36 @@
             <a href="https://mussumipsum.com/">Link</a>
             <hr>
         </p>
-        <p>Mussum Ipsum, cacilds vidis litro abertis.
-            Detraxit consequat et quo num tendi nada.
-            Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
-            Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
-            Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
-            <br><br>
-            <a href="https://mussumipsum.com/">Link</a>
-            <hr>
-        </p>
-        <figure>
-            <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
-            <figcaption>Gramado</figcaption>
-        </figure>
-        <figure>
-            <img src="img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
-            <figcaption>Porto Seguro</figcaption>
-        </figure>
-        <figure>
-            <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
-            <figcaption>Rio de Janeiro</figcaption>
-        </figure>
-
+        <div class="figuras">
+            <figure>
+                <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
+                <figcaption>Gramado</figcaption>
+            </figure>
+            <figure>
+                <img src="img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
+                <figcaption>Porto Seguro</figcaption>
+            </figure>
+            <figure>
+                <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+        </div>
+        <div class="videos">
+           <video controls width="500px" ;>
+            <source src="video/rabbit320.mp4" type="video/mp4">
+            <source src="video/video_rabbit320.webm" type="video/webm">
+            Seu navegador não suporta o formato do vídeo. <a href="video/rabbit320.mp4">Clique aqui para baixar</a>
+        </video>
+        <br><br> 
+        </div>
+        
     </section>
-    <video controls width="500px" ;>
-        <source src="video/rabbit320.mp4" type="video/mp4">
-        <source src="video/video_rabbit320.webm" type="video/webm">
-        Seu navegador não suporta o formato do vídeo. <a href="video/rabbit320.mp4">Clique aqui para baixar</a>
-    </video>
-    <br><br>
+
 
     <section>
         <h2>Taxas e Serviços</h2>
         <p>Veja nossas taxas para serviços:</p>
-        <table border>
+        <table>
             <caption>Descrição dos serviços e respectivos valores</caption>
             <thead>
                 <tr>
@@ -89,15 +73,11 @@
             <tbody>
                 <tr>
                     <td>Reserva de hotel</td>
-                    <td>R$150,00</td>
-                </tr>
-                <tr>
-                    <td>Compra de passagens</td>
-                    <td>R$100,00</td>
+                    <td>$500,00</td>
                 </tr>
                 <tr>
                     <td>Aluguel de Carros</td>
-                    <td>R$50,00</td>
+                    <td>R$300,00</td>
                 </tr>
             </tbody>
         </table>
@@ -137,15 +117,15 @@
             </fieldset><br>
             <fieldset>
                 <legend>Escolha a forma de pagamento:</legend>
-                    <label>
-                        <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
-                    </label>
-                    <label>
-                        <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
-                    </label>
-                    <label>
-                        <br><input type="radio" name="formaPagamento" value="Pix">Pix
-                    </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Pix">Pix
+                </label>
             </fieldset><br>
 
             <fieldset>
